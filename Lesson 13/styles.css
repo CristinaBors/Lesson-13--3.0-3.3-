@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    background-color: #b1c9e1 ;
+    color: rgb(123, 77, 20);
+}
+
+a{
+    text-decoration: none;
+}
+
+.options {
+    list-style: none;
+}
+
+.col{
+    /*border: 1px solid black;*/
+
+    display: inline-block;
+    width: 45%;
+    
+
+}
+
+.plans {
+    display: none;
+}
+.plans:target {
+    display: inline-block;
+}
+
+li {
+    border-bottom: 0.5px solid brown;
+}
