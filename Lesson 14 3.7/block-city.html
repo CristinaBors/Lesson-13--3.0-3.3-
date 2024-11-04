@@ -19,18 +19,59 @@
             background-color: darkgray;
             width: 150px;
             height: 150px;
+            display: inline-block;
+            margin-right: -4px;
+            
         }
          .streetA {
             background-color: dimgrey;
             width: 250px;
             height: 150px;
-            border: 1px solid red;
+            /*border: 1px solid red;*/
+            display: inline-block;
         }
+        .center-band {
+            border-bottom: 2px solid white;
+            width: inherit;
+            height: 73px ;
+        }
+
+            .band-marker-h {
+            border-bottom: 2px dashed white;
+            width: inherit;
+            height: 36px ;
+        }
+        .lower-band {
+            border-bottom: 2px dashed white;
+            width: inherit;
+            height: 109px ;
+        }
+
+        
+        
         .streetB {
             background-color: dimgrey;
             width: 150px;
             height: 250px;
+            margin-top: -4px;
         }
+        .left-band {
+            border-right: 2px solid white;
+            width: 73px;
+            height: inherit;
+        }
+
+        .right-band {
+            border-right: 2px dashed white;
+            width: 108px;
+            height: inherit;
+        }
+        .band-marker-v {
+            border-right: 2px dashed white;
+            width: 36px;
+            height: inherit;
+        }
+        
     </style>
 </head>
 <body>
@@ -39,10 +80,31 @@
         <div id="square">
         </div>
         <div class="streetA">
-            A
+
+            <div class="center-band">
+                <div class="lower-band">
+                    <div class="band-marker-h">
+            
+                    </div>
+            
+                </div>
+            
+            </div>
+            
         </div>
         <div class="streetB">
+            
+            
+            <div class="right-band">
+                <div class="left-band">
+                    <div class="band-marker-v">
 
+                    </div>
+
+                </div>
+                
+            </div>
+            
         </div>
 
     </div>
