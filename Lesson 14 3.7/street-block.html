@@ -13,8 +13,10 @@
             border: 1px dotted red;
         }
         .house {
-            border: 1px dotted green;
-            width: 150px;    
+            /* border: 1px dotted green;*/
+            width: 150px;  
+            display: inline-block;  
+            margin-right: 70px;
         }
         .house-roof {
             width: 0px;
@@ -50,6 +52,83 @@
             width: inherit;
             height: 15px;
         }
+
+        .building-tall {
+            background-color: bisque;
+            height: 300px;
+            width: 150px;
+            display: inline-block;
+        }
+        .floor-line5 {
+            border-bottom: 1px solid white;
+            height: 65px;
+            width: inherit;
+        }
+        .floor-line4 {
+            border-bottom: 1px solid white;
+            height: 100px;
+            width: inherit;
+            
+        }
+        .floor-line3 {
+            border-bottom: 1px solid white;
+            height: 135px;
+            width: inherit;
+            
+        }
+        .floor-line2 {
+            border-bottom: 1px solid white;
+            height: 160px;
+            width: inherit;}
+
+        .floor-line1 {
+        border-bottom: 1px solid white;
+        height: 175px;
+        width: inherit;
+        }
+
+        .building-tall-window5 {
+            border: 5px solid brown;
+            width: 15px;
+            height: 15px;
+            transform: translateX(10px) translateY(15px);
+        }
+        .building-tall-window4 {
+            border: 5px solid brown;
+            width: 15px;
+            height: 15px;
+            transform: translateX(10px) translateY(55px);
+        }
+        .building-tall-window3 {
+            border: 5px solid brown;
+            width: 15px;
+            height: 15px;
+            transform: translateX(10px) translateY(100px);
+        }
+        .building-tall-window2 {
+            border: 5px solid brown;
+            width: 15px;
+            height: 15px;
+            transform: translateX(10px) translateY(155px);
+        }
+        .building-tall-window1{
+            border: 5px solid brown;
+            width: 15px;
+            height: 15px;
+            transform: translateX(10px) translateY(175px);
+        }
+
+        .cloud {
+            display:inline-block;
+            vertical-align: top;
+            padding-top: 20px;
+        }
+        .building-small {
+            display: inline-block;
+            background-color: rgb(198, 182, 162);
+            height: 175px;
+            width: 100px;
+        }
     </style>
 </head>
 <body>
@@ -65,6 +144,34 @@
                 </div>
             </div>
         </div>
+                🌳 🌳
+        <div class="building-tall">
+            <div class="floor-line5">
+
+
+
+
+                <div class="building-tall-window5"></div>
+                <div class="building-tall-window5"></div>
+                 <div class="floor-line4"> 
+                        <div class="building-tall-window4"></div>
+                            <div class="floor-line3">
+                                <div class="building-tall-window3"></div>
+                                 <div class="floor-line2">
+                                    <div class="building-tall-window2"></div>
+                                            <div class="floor-line1">
+                                                <div class="building-tall-window1"></div>
+                                            </div>
+                                    </div>
+                                 </div>
+                    </div> 
+            </div> 
+        </div>
+                🌳 🌳
+        <div class="cloud">
+            <img src="https://icons.iconarchive.com/icons/custom-icon-design/flatastic-11/72/Cloud-icon.png" alt="">
+        </div>
+        <div class="building-small"></div>
     </div>
 
     
