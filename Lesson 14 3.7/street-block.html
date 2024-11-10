@@ -53,6 +53,10 @@
             height: 15px;
         }
 
+        .tree {
+            display: inline-block;
+        }
+
         .building-tall {
             background-color: bisque;
             height: 300px;
@@ -64,6 +68,7 @@
             height: 50px;
             width: inherit;
         }
+
 
         .building-tall-window5 {
             border: 5px solid brown;
@@ -83,7 +88,58 @@
             background-color: rgb(198, 182, 162);
             height: 175px;
             width: 100px;
+            transform: translateX(0px) translateY(-25px);
         }
+
+        .floor-line3 {
+            border-bottom: 1px solid white;
+            height: 58px;
+            width: inherit;
+        }
+        .house-window-small1 {
+            border: 3px solid brown;
+            width: 25px;
+            height: 25px;
+            margin: 2px;
+
+            transform: translateX(18px) translateY(18px);
+            display: inline-block;
+            
+        }
+        .house-window-h-small1 {
+            border-right: 2px solid white;
+            width: 15px;
+            height: inherit;
+        }
+         .house-window-v-small1 {
+            border-bottom: 2px solid white;
+            width: inherit;
+            height: 15px;
+        }
+
+        .house-window-small2 {
+            border: 3px solid brown;
+            width: 25px;
+            height: 25px;
+
+            transform: translateX(18px) translateY(18px);
+            display: inline-block;
+            margin: 2px;
+            
+        }
+        .house-window-h-small2 {
+            border-right: 2px solid white;
+            width: 15px;
+            height: inherit;
+        }
+         .house-window-v-small2 {
+            border-bottom: 2px solid white;
+            width: inherit;
+            height: 15px;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -99,10 +155,10 @@
                 </div>
             </div>
         </div>
-                🌳 🌳
+                <div class="tree">🌳 🌳</div> 
         <div class="building-tall">
             <div class="floor-line5"> 
-                <img src="https://icons.iconarchive.com/icons/pictogrammers/material/48/balcony-icon.png" alt="">
+                <img class='tall-building-windows' src="https://icons.iconarchive.com/icons/pictogrammers/material/48/balcony-icon.png" alt="">
                 <img src="https://icons.iconarchive.com/icons/dapino/halloween-stamps/48/stamp-spooky-window-icon.png" alt="">
                 
             </div>
@@ -131,11 +187,51 @@
             
 
         </div>
-                🌳 🌳
+        <div class="tree" >🌳 🌳</div> 
         <div class="cloud">
             <img src="https://icons.iconarchive.com/icons/custom-icon-design/flatastic-11/72/Cloud-icon.png" alt="">
         </div>
-        <div class="building-small"></div>
+        <div class="building-small">
+            <div class="floor-line3">
+                <div class="house-window-small1">
+                    <div class="house-window-h-small1">
+                        <div class="house-window-v-small1"></div>
+                    </div>
+                </div>
+
+                <div class="house-window-small2">
+                    <div class="house-window-h-small2">
+                        <div class="house-window-v-small2"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="floor-line3"><div class="house-window-small1">
+                <div class="house-window-h-small1">
+                    <div class="house-window-v-small1"></div>
+                </div>
+            </div>
+
+            <div class="house-window-small2">
+                <div class="house-window-h-small2">
+                    <div class="house-window-v-small2"></div>
+                </div>
+            </div></div>
+            <div class="floor-line3"><div class="house-window-small1">
+                <div class="house-window-h-small1">
+                    <div class="house-window-v-small1"></div>
+                </div>
+            </div>
+
+            <div class="house-window-small2">
+                <div class="house-window-h-small2">
+                    <div class="house-window-v-small2"></div>
+                </div>
+            </div>
+        </div>
+            
+            
+        </div>
     </div>
 
     
