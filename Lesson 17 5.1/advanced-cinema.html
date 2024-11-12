@@ -43,6 +43,26 @@
 
             display:inline-block;
         }
+
+        .span::before {
+            content: none;
+        }
+
+        .not-availablef::before {
+            content:url(https://icons.iconarchive.com/icons/icons-land/vista-people/48/Office-Customer-Female-Light-icon.png);
+        }
+        .not-availablem::before {
+            content: url(https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/48/man-icon.png);
+        }
+
+        .aisle {
+            
+            width: 48px;
+            height: 48px;
+            display: inline-block;
+        }
+
+
     </style>
 </head>
 <body>
@@ -54,16 +74,16 @@
         <div class="vip">
             <h2>VIP</h2>
             <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span>
-                <span>7<br><img src="https://icons.iconarchive.com/icons/icons-land/vista-people/48/Office-Customer-Female-Light-icon.png"></span>
+                <span class="not-availablef"><br>7</span>
             </div>
 
         </div>
 
         <div class="main">
             <H2>Main</H2>
-            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
-            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
-            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5<br><img src="https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/48/man-icon.png"></span><span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><div class="aisle"></div><span>5</span><span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><div class="aisle"></div><span>5</span><span>6</span><span>7</span><span>8</span></div>
+            <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><div class="aisle"></div><span class="not-availablem"><br>5</span><span>6</span><span>7</span><span>8</span></div>
 
         </div>
 
