@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PRELOADER</title>
+
+        <style>
+            body {
+                background-color: #333;
+            }
+
+            .preloader {
+                /* border: 1px solid white; */
+                width: 100px;
+                height: 300px;
+                margin-top: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .ball {
+                height: 100px;
+                width: 100px;
+                background-image: radial-gradient(white,white,black);
+                border-radius: 100%;
+
+                animation: bounce 1s 10;
+                animation-direction: alternate;
+                animation-fill-mode: forwards;
+
+            }
+
+            .label {
+                width: 200px;
+                color: white;
+                margin: auto;
+                text-align: center;
+            }
+
+            .shadow {
+                width: 100px;
+                height: 50px;
+                background-image: radial-gradient(black, transparent);
+                border-radius: 100%;
+                
+                transform: translateY(150px);
+                
+                animation: flicker 1s 10;
+                animation-direction: alternate;  
+            }
+
+
+            @keyframes bounce {
+                from {transform:translateY(150px)};
+                to {transform:translateY(0)}
+            }
+
+
+            @keyframes flicker {
+                from {opacity: 1; width: 100px; height: 50px;}
+                to {opacity: 0.01; width: 200px; height: 100px;}  
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="preloader">
+            <div class="ball"></div>
+            <div class="shadow"></div>
+
+        </div>
+
+        <div class="label">
+            loading...
+        </div>
+
+        
+    </body>
+</html>
